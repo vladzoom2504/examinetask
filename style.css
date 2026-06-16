@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer {
+    background-color: black;
+    color: #f5f5f5;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.footer-link {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.socialnet {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    justify-self: end;
+}
+
+form {
+    width: 380px;
+    margin: 0 auto;
+}
+
+.mainn {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: 0.2px solid rgb(129, 129, 129);
+
+}
+
+.reg {
+    background: #fffdfd;
+    padding: 28px;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(117, 115, 115);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.agrees {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: rgb(59, 58, 58);
+    font-size: 12px;
+    margin-bottom: 20px;
+    
+}
+
+.agrees a {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px 30px 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+button:hover{
+    transform: translateY(-3px);
+    box-shadow:inset -1px 3px 8px 5px #aeb2b6 ;
+}
+.sign {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.sign a {
+    color: black;
+    text-decoration: underline;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 50px auto 50px 50px;
+    place-items: center;
+    justify-items: end;
+    gap: 10px;
+}
+
+.search input[type="text"] {
+    border: none;
+    outline: none;
+}
+
+.custom_checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.box {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #00000053;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mark {
+    height: 12px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+input[type="checkbox"]:checked+.box .mark {
+    opacity: 1;
+}
+
+
+/* 2 page */
+.second-page {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 18px;
+    padding: 0 0 95px 0;
+}
+
+.cloth {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.orange {
+    font-size: 15px;
+    color: #9E3500;
+}
+
+.gender {
+    color: #757575;
+}
+
+.color {
+    color: #757575;
+}
+
+.nikeimg {
+    display: block;
+    width: 100%;
+    transition: 0.8s;
+}
+.nikeimg:hover{
+    transform: translateY(-7px);
+}
+/* 3 page */
+.third-page {
+    padding: 60px 0;
+}
+
+.new {
+    text-align: center;
+}
+
+.nike {
+    display: block;
+    width: 100%;
+}
+
+.first-look {
+    padding: 48px 168px 0;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 56px;
+    padding: 4px 0 24px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 24px 175px 0 168px;
+}
+
+.f-but {
+    display: block;
+    background-color: #111111;
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 7.5px 22px;
+    transition: 1s;
+}
+.f-but:hover,
+.s-but:hover {
+    transform: translateY(-3px);
+    box-shadow:inset -1px 3px 8px 5px #aeb2b6;
+}
+.s-but {
+    display: block;
+    background-color: #111111;
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 7.5px 22px;
+    transition: 1s;
+}
+
+.best {
+    font-size: 22px;
+    padding: 64px 0 12px 0;
+}
+
+.shoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.inf_about_shoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.price1 {
+    justify-self: end;
+}
+
+.essen {
+    padding: 0 0 25px 0;
+    font-size: 23px;
+}
+
+.Essential {
+    padding: 64px 0 0 0;
+}
+
+.choice {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.choice-text {
+    position: absolute;
+    bottom: 48px;
+    left: 48px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 7.5px 20px;
+    transition: 1s;
+}
+.choice-text:hover{
+    transform: translateY(-3px);
+    box-shadow:inset -1px 3px 8px 5px #aeb2b6;
+}
+.choice a {
+    position: relative;
+}
+
+.People {
+    display: block;
+    width: 100%;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .burger {
+        display: flex;
+        justify-self: end;
+        padding: 16px;
+    }
+
+    .first-look {
+        padding: 32px 0;
+    }
+
+    .buttons {
+        padding: 17px 60px 0 60px;
+    }
+
+    .shoes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .nikeimg {
+        display: block;
+        width: 100%;
+    }
+
+
+    .choice {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .links {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .socialnet {
+        justify-self: start;
+    }
+
+    .second-page {
+        display: block;
+        padding: 0;
+    }
+
+    .catalog {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        padding: 32px 16px 74px;
+    }
+
+    .cloth {
+        display: flex;
+        padding: 16px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 1150px) and (min-width: 601px) {
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        justify-self: end;
+        padding: 16px;
+    }
+
+    .buttons {
+        padding: 24px 0 0 0;
+    }
+
+    .shoes {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .choice {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cloth {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding: 16px;
+        gap: 30px;
+    }
+
+    .second-page {
+        display: block;
+        padding: 0;
+    }
+
+    .catalog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 32px 16px 74px;
+    }
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 25px;
+    }
+    .socialnet{
+        justify-self: center;
+        align-self: center;
+    }
+    .footer-link{
+        text-align: center;
+    }
+}
